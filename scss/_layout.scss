@@ -1,0 +1,83 @@
+@for $i from 1 through length($backgrounds) {
+  .new__content .content__card:nth-of-type(#{$i}) {
+  background-image: url(nth($backgrounds, $i));
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
+
+// @for $i from 1 through length($feature-backgrounds) {
+//   .sub .sub__feature:nth-of-type(#{$i}) {
+//   background-image: url(nth($feature-backgrounds, $i));
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   height: 260px;
+//   @media (max-width: 700px) {
+//     height: 200px;
+//   }
+//
+//   }
+// }
+
+
+.main__container {
+  max-width: 1200px;
+  margin: auto;
+}
+// div {
+//       border: 1px solid red;
+// }
+.sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .sub__feature {
+    flex: 1;
+
+  }
+}
+
+img.sub__feature {
+  max-width: 100%;
+}
+
+
+.new {
+  font-family: 'Comfortaa', cursive;
+}
+
+.new__header {
+  display: flex;
+  justify-content: space-between;
+  .header__sub{
+    flex: 1;
+    text-align: right;
+    align-self: center;
+  }
+  .header__main {
+    flex: 1;
+    text-align: center;
+  }
+  .header__space {
+    flex: 1;
+  }
+}
+
+.new__content {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(255, 255, 255);
+  .content__card{
+    min-height: 180px;
+    min-width: 275px;
+    flex: 1;
+    margin: 0.7%;
+    padding: 10px;
+    }
+    @media (min-width: 900px) {
+      .content__card:nth-of-type(-n+2){
+        flex-basis: 45%;
+        min-height: 275px;
+      }
+    }
+}

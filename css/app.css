@@ -1,0 +1,71 @@
+.new__content .content__card:nth-of-type(1) {
+  background-image: url("../img/yeti.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.new__content .content__card:nth-of-type(2) {
+  background-image: url("../img/store.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.new__content .content__card:nth-of-type(3) {
+  background-image: url("../img/snowboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.new__content .content__card:nth-of-type(4) {
+  background-image: url("../img/bike.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.new__content .content__card:nth-of-type(5) {
+  background-image: url("../img/team.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.main__container {
+  max-width: 1200px;
+  margin: auto; }
+
+.sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .sub .sub__feature {
+    flex: 1; }
+
+img.sub__feature {
+  max-width: 100%; }
+
+.new {
+  font-family: 'Comfortaa', cursive; }
+
+.new__header {
+  display: flex;
+  justify-content: space-between; }
+  .new__header .header__sub {
+    flex: 1;
+    text-align: right;
+    align-self: center; }
+  .new__header .header__main {
+    flex: 1;
+    text-align: center; }
+  .new__header .header__space {
+    flex: 1; }
+
+.new__content {
+  display: flex;
+  flex-wrap: wrap;
+  color: white; }
+  .new__content .content__card {
+    min-height: 180px;
+    min-width: 275px;
+    flex: 1;
+    margin: 0.7%;
+    padding: 10px; }
+  @media (min-width: 900px) {
+    .new__content .content__card:nth-of-type(-n+2) {
+      flex-basis: 45%;
+      min-height: 275px; } }
+
+/*# sourceMappingURL=app.css.map */
